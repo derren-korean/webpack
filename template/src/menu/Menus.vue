@@ -8,7 +8,7 @@
 						<input type="file" name="profile-image" 
 							accept="image/*" style="display:none;">
 						<img class="circle" 
-							:src="imageServerUrl+user.imagePath" 
+							src="/{{name}}/static/{{name}}/image/user.png" 
 							@click="profileUpload()">
 					</div>
 					<div class="desc">

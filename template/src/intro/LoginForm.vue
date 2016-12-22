@@ -79,11 +79,6 @@ export default {
 		this.$root.bus.$off('login-failure', this.LoginFailure)
 	},
 
-	goHome(){
-		// this.$store.dispatch('something initial');
-		this.$router.push({name:'home'});
-	},
-
 	methods:{
 
 		login(){
@@ -101,6 +96,11 @@ export default {
 					console.log('fail... to auto login')
 				}
 			});
+		},
+
+		goHome(){
+			// this.$store.dispatch('something initial');
+			this.$router.push({name:'myhome'});
 		},
 
 		loginSuccess(){

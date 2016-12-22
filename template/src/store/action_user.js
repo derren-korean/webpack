@@ -40,10 +40,12 @@ export const login = ({commit, state, context}, {email, password, success, fail}
 	commit({
 		type: 'user', 
 		user: {
+			id: 1,
 			name:'jongwon',
 			email: 'jongwon'
 		}
 	});
+	success();
 };
 
 export const reload = ({commit, state}, {user, success, fail}) => {
@@ -67,6 +69,15 @@ export const reload = ({commit, state}, {user, success, fail}) => {
 	// 	}
 	// 	commit('endLoading', {silent:true});
 	// });
+	commit({
+		type: 'user', 
+		user: {
+			id: 1,
+			name:'jongwon',
+			email: 'jongwon'
+		}
+	});
+	success();
 };
 
 
