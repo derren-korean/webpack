@@ -20,6 +20,12 @@ module.exports = {
       "message": "Project description",
       "default": "A Vue.js project"
     },
+    "tomcatport": {
+      "type": "integer",
+      "required": false,
+      "message": "Local Tomcat Port",
+      "default": 7000
+    },
     "author": {
       "type": "string",
       "message": "Author"
