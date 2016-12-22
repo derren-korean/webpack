@@ -1,9 +1,8 @@
 <template>
 	<header>
+		<ul id="slide-out" class="side-nav">
 		<template v-if="user">
-			<ul id="slide-out" class="side-nav">
-
-				<li>
+			<li>
 				<div class="user-profile">
 					<div class="userView profile">
 						<input type="file" name="profile-image" 
@@ -24,14 +23,14 @@
 					<i class="material-icons">{{menu.icon}}</i> {{menu.title}} 
 				</a>
 			</li>
-			</ul>
 	    </template>
 	    <template v-else>
-			<div>
+			<li>
 				로그아웃 되었습니다. <br>
 				로그인을 해주십시오. 
-			</div>
+			</li>
 	    </template>      
+		</ul>
       	<a href="#" data-activates="slide-out" class="button-collapse"></a>
     </header>
 </template>
