@@ -33,7 +33,7 @@ function requireAuth (to, from, next) {
 
 const routes = [
 
-    { path: local+'/', component: CourseList, beforeEnter: requireAuth },
+    { path: local+'/', component: MyHome, beforeEnter: requireAuth },
 
     // 나의 과목 : mywork
     { path: local+'/{{name}}/myhome', name:'myhome', component: MyHome, beforeEnter: requireAuth },
