@@ -15,7 +15,7 @@ import Settings from '../settings/Settings'
 import Terms from '../settings/Terms'
 import Privacy from '../settings/Privacy'
 
-const local = process.env.localctx;
+const local = process.env.local || '';
 
 function requireAuth (to, from, next) {
     let user = router.store.getters.user;

@@ -1,4 +1,4 @@
-const local = process.env.local;
+const local = process.env.local || '';
 module.exports = [
     {
         name: 'myhome',
