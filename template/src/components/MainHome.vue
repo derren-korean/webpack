@@ -6,7 +6,8 @@
 			:slidmenushow="slidmenushow" 
 			:backbuttonshow="backbuttonshow">
       		<ul id="nav-mobile" slot="right-menu" 
-      			class="right hide-on-med-and-down">
+      			class="right hide-on-med-and-down"
+      			style="display: flex !important;">
         		<li>
         			<a class="waves-effect waves-light dropdown-button" 
         				data-activates="dropdown-categories">
