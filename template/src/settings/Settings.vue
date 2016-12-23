@@ -16,7 +16,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading"> <i class=""></i> 페이스북 계정 연동 </div>
 				<div class="panel-body">
-					<pre> Mathtriz 문제를 푼다. </pre>
+					<pre> 이 앱에 대한 설명을 넣어주세요... </pre>
 
 					<div class="center-align">
 						<form v-if="!loggedIn" @submit.prevent="login" class="center-align">
@@ -56,9 +56,9 @@
 		</div>
 
 		<modal v-if="showModal" @close="showModal = false" @send="send()">
-			<h5 slot="header">{{ modal.facebook.header }}</h5>
-			<p slot="body">{{ modal.facebook.body }}</p>
-			<span slot="footer">{{ modal.facebook.footer }}</span>
+			<h5 slot="header">\{{ modal.facebook.header }}</h5>
+			<p slot="body">\{{ modal.facebook.body }}</p>
+			<span slot="footer">\{{ modal.facebook.footer }}</span>
 		</modal>
 
 	</div>

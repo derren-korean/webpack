@@ -13,8 +13,8 @@
 					</li>
 			  	</ul>
 		      	<a class="brand-logo center"> 
-		      		{{title}}
-		      		{{subTitle}} 
+		      		\{{title}}
+		      		\{{subTitle}} 
 		      	</a>
 		      	<slot name="right-menu"></slot>
 		    </div>

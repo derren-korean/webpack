@@ -12,7 +12,7 @@
 							@click="profileUpload()">
 					</div>
 					<div class="desc">
-						<a><span class="name"> {{user.name}} </span></a>
+						<a><span class="name"> \{{user.name}} </span></a>
 					</div>
 				</div>
 			</li>
@@ -20,7 +20,7 @@
 			<li><div class="divider"></div></li>
 			<li v-for="menu in menus">
 				<a @click="goPage(menu.path)">
-					<i class="material-icons">{{menu.icon}}</i> {{menu.title}} 
+					<i class="material-icons">\{{menu.icon}}</i> \{{menu.title}} 
 				</a>
 			</li>
 	    </template>

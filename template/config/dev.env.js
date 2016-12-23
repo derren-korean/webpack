@@ -3,5 +3,6 @@ var prodEnv = require('./prod.env')
 
 module.exports = merge(prodEnv, {
   NODE_ENV: '"development"',
-  ctx: '"http://localhost:{{tomcatport}}"'
+  ctx: '"http://localhost:{{tomcatport}}"',
+  local: '""'
 })
