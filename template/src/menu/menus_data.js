@@ -1,7 +1,7 @@
 const local = process.env.local;
 module.exports = [
     {
-        name: 'courselist',
+        name: 'myhome',
         path: local+'/{{name}}/myhome',
         icon: 'home',
         title: 'My Home'
